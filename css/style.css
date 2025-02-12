@@ -516,6 +516,31 @@ nav ul li .resume-link:hover {
     max-height: 80px;
 }
 
+/* Ensuring the image is responsive */
+.responsive-img {
+    max-width: 100%;  /* Image scales with the container */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Removes extra space below the image */
+    margin: 0 auto;   /* Centers the image */
+}
+
+/* Responsive container */
+.brands {
+    width: 100%;
+    text-align: center; /* Centers the image within the div */
+    padding: 10px;
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+    .brands {
+        padding: 5px;
+    }
+    .responsive-img {
+        width: 80%; /* Adjusts image size on smaller screens */
+    }
+}
+
 .download-btn {
     background-color: #007bff;
     color: white;
