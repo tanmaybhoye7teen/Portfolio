@@ -540,6 +540,46 @@ nav ul li .resume-link:hover {
         width: 80%; /* Adjusts image size on smaller screens */
     }
 }
+/* Styling for the interactive links */
+.animation-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.animated-link {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.animated-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Click Effect */
+.animated-link:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .animated-link {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
 
 .download-btn {
     background-color: #007bff;
